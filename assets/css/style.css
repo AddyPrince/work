@@ -1,26 +1,26 @@
 /* section settings */
-html,body{
+html,
+body {
     height: 100%;
-    font-family: 'Prompt', sans-serif;
+    font-family: "Prompt", sans-serif;
 }
 
-.bg-alpha{
+.bg-alpha {
+    background: rgba(0, 0, 0, 0);
+}
+
+.blackscreen {
     background: rgba(0, 0, 0, 0.5);
-}
-
-.blackscreen{
-    background: rgba(0, 0, 0,0.5);
     height: 100%;
 }
 
-
-.border-suort-bottom{
-    position: relative; 
+.border-suort-bottom {
+    position: relative;
     padding: 20px 0;
     margin-bottom: 20px;
 }
 
-.border-suort-bottom::after{
+.border-suort-bottom::after {
     position: absolute;
     content: "";
     width: 100px;
@@ -29,57 +29,55 @@ html,body{
     left: 50%;
     margin-left: -50px;
     background: #595959;
-
 }
 
 /* section carousel */
 .carousel,
 .carousel-inner,
 .carousel-item,
-.carousel-inner .active{
+.carousel-inner .active {
     height: 100%;
 }
-.carousel-img{
+.carousel-img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
 
-.carousel-caption{
+.carousel-caption {
     top: 40%;
 }
 
 /* section Blog */
-.warpper-card-img{
+.warpper-card-img {
     position: relative;
     padding-top: 56.25%;
     overflow: hidden;
 }
 
-.warpper-card-img img{
+.warpper-card-img img {
     position: absolute;
     top: 0;
     transition: 1.2s;
 }
 
-.warpper-card-img img:hover{
+.warpper-card-img img:hover {
     transform: scale(1.1);
-
 }
 /* section Footer */
-.semi-footer{
+.semi-footer {
     background: #2b2b2b;
 }
 
-.semi-footer h4{
+.semi-footer h4 {
     color: #75c6fc;
     border-bottom: 1px solid;
     padding: 10px 0;
     margin-top: 8px;
 }
 
-.footer{
+.footer {
     background: #000;
     color: #fff;
     font-size: 0.7rem;
@@ -91,21 +89,33 @@ html,body{
 /* Section Navbar */
 
 #navbar {
-    padding: 25px;
     transition: 0.5s;
 }
-
+.navbar-transparent {
+    background-color: #59595900;
+}
+.navbar-normal {
+    background-color: rgb(32, 32, 32);
+}
 /* Section Page-title */
-.page-title{
+.page-title {
     position: relative;
     display: block;
     padding-top: 250px;
     padding-bottom: 100px;
     color: #fff;
 }
-
-
-
-
-
-
+.collapse ul li:hover {
+    transition: 0.2s;
+    background-color: rgb(42, 42, 42);
+    border-radius: 5px;
+    filter: brightness(110%);
+}
+@media only screen and (max-width: 850px) {
+    .navbar-transparent {
+        background-color: #595959;
+    }
+    .bg-alpha {
+        background: rgb(0, 0, 0);
+    }
+}

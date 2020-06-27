@@ -1,24 +1,30 @@
 
-$(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-    if (scrollTop > 1) {
-        $('#navbar').css('padding', '5px 25px')
-    } else {
-        $('#navbar').css('padding', '25px')
-    }
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  if (scrollTop > 1) {
+
+    $('#navbar').css('padding', '5px 10px')
+    $('#navbar').addClass("navbar-normal");
+    $('#navbar').removeClass("navbar-transparent");
+
+  } else {
+    $('#navbar').addClass("navbar-transparent");
+    $('#navbar').removeClass("navbar-normal");
+
+  }
 })
 
 
 AOS.init({
-    easing: 'ease-in-out-sine'
-  });
+  easing: 'ease-in-out-sine'
+});
 
 setInterval(addItem, 300);
 
 var itemsCounter = 1;
 var container = document.getElementById('aos-demo');
 
-function addItem () {
+function addItem() {
   if (itemsCounter > 42) return;
   var item = document.createElement('div');
   item.classList.add('aos-item');
