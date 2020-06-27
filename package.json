@@ -1,0 +1,20 @@
+{
+  "name": "work_out",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0",
+    "jarallax": "^1.12.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "save": "^2.4.0"
+  }
+}
