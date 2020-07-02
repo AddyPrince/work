@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 
 --
 -- โครงสร้างตาราง `admin`
---
+-- admin password 123456
 
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
