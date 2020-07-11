@@ -97,6 +97,9 @@ body {
 .navbar-normal {
     background-color: rgb(32, 32, 32);
 }
+
+
+ 
 /* Section Page-title */
 .page-title {
     position: relative;
@@ -119,3 +122,4 @@ body {
         background: rgb(0, 0, 0);
     }
 }
+

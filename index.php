@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-  <!-- Navber -->
-  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/image/logo1.jpg" width="45" height="45" alt="" style="border-radius: 5px;">
-      </a>
-
-      <span class="navbar-text text-white collapse navbar-collapse">
-        ICON-ENGINEERING SOLUTIONS
-      </span>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey"
-        aria-controls="#navbarKey" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarKey">
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-
+<?php 
+include 'head.php' ;
+?>
   <!-- image top -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -146,7 +94,7 @@
 
   <!-- Blog -->
   <div class="container p-3">
-    <h1 class="border-suort-bottom text-center">บทความ Blog</h1>
+    <h1 class="border-suort-bottom text-center">เกี่ยวกับเรา</h1>
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 p-3" data-aos="fade-left">
         <div class="card h-100">
@@ -198,40 +146,7 @@
     </div>
   </div>
 
-  <!-- Footer -->
-
-  <footer class="semi-footer text-white p-5 text-center text-md-left">
-    <div class="row">
-      <div class="col-md-4" data-aos="flip-left">
-        <h4> ICON-ENGINEERING SOLUTIONS Co.,Ltd.</h4>
-        <p>เขตอุตสาหกรรมสุรนารี 799 <br> หมู่ที่ 3 ตำบลหนองบัวศาลา <br> อำเภอเมืองนครราชสี จังหวัดนครราชสีมา 30000</p>
-      </div>
-      <div class="col-md-4" data-aos="flip-right">
-        <h4>ติดต่อเรา</h4>
-        <p>
-          <i class="fa fa-phone-square"></i> TEL : 044-756 997 <br>
-          <i class="fa fa-fax"></i> FAX : 044-756 998 <br>
-          <i class="fa fa-fax"></i> FAX ID : 0105557056792 <br>
-          <i class="fa fa-address-card"></i> Email : infor@icon-engsolutions.com
-        </p>
-      </div>
-      <div class="col-md-4" data-aos="flip-up">
-        <h4> แผนที่</h4>
-      </div>
-    </div>
-  </footer>
-
-  <footer class="footer">
-    <span> COPYRIGHT 2020</span> ICON-ENGINEERING SOLUTIONS Co.,Ltd.
-  </footer>
-
-
-  <script src="node_modules/aos/dist/aos.js"></script>
-  <script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+  <?php 
+  include 'foot.php';
+  ?>
+  
