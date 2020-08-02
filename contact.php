@@ -1,126 +1,132 @@
-<?php 
-include 'head.php'
-?>
+<?php include 'header.php' ?>
 
-<!-- Navber -->
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/image/logo1.jpg" width="45" height="45" alt="" style="border-radius: 5px;">
-      </a>
-
-      <span class="navbar-text text-white collapse navbar-collapse">
-        ICON-ENGINEERING SOLUTIONS
-      </span>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey"
-        aria-controls="#navbarKey" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarKey">
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item">
-          <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="about.php">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.php">Blog</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
-        </ul>
-
-      </div>
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+        <div class="container d-flex">
+            <div class="contact-info mr-auto">
+                <i class="icofont-envelope"></i> <a href="project@itssautomation.com">project@itssautomation.com</a>
+                <i class="icofont-phone"></i> 0614652652
+            </div>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="skype"><i class="icofont-skype"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+        </div>
     </div>
-  </nav>
 
-<!-- TOP -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-img jarallax" data-jarallax='{ "speed": 0.6 }' style="background-image: url(assets/image/a3.jpg)">
-          <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">ติดต่อเรา</h1>
-            <h1 class="display-5 font-weight-bold">ICON-ENGINEERING</h1>
-            <p>ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)</p>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+            <h1 class="logo mr-auto"><a href="index.html">ENGINEERING</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo  SOLUTIONS Co, Ltd -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" class="img-fluid"></a>-->
+    
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">about</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li class="active"><a href="portfolio.php">Portfolio</a></li>
+                    <!-- <li><a href="#team">Team</a></li> -->
+                    <li><a href="contact.php">Contact</a></li>
+    
+                </ul>
+            </nav><!-- .nav-menu -->
+    
+        </div>
+    </header><!-- End Header -->
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>ENGINEERING SOLUTIONS Co, Ltd</h1>
+      <h2>ผลิตภัณฑ์มีมาตรฐาน  ล้ำเลิศเทคโนโลยี ทีมงานมืออาชีพ 
+        มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์ สำคัญที่สุดคือลูกค้า
+        </h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>เขตอุตสาหกรรมสุรนารี 799 หมู่ที่ 3 ตำบลหนองบัวศาลา</p>
+            </div>
           </div>
-          <div class="blackscreen"> </div>
-        </div>
-      </div>
-      </div>
-      </div>
 
-<!-- Section Blog -->
-<section class="container py-5">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="border-short-bottom">รายละเอียด</h2>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email TH</h3>
+              <p>project@itssautomation.com</p>
             </div>
-            <div class="col-sm-4 mb-3" data-aos="fade-left">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <i class="fa fa-address-card py-2 fa-4x text-info" aria-hidden="true"></i>
-                        <h4 class="card-title">ที่อยู่</h4>
-                        <p class="card-text">เขตอุตสาหกรรมสุรนารี 799 หมู่ที่ 3 ตำบลหนองบัวศาลา</p>
-                    </div>
-                </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call TH</h3>
+              <p>061-465-2652</p>
             </div>
-            <div class="col-sm-4 mb-3" data-aos="fade-right">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <i class="fa fa-phone-square py-2 fa-4x text-info" aria-hidden="true"></i>
-                        <h4 class="card-title">เบอร์โทรศัพท์</h4>
-                        <p  class="card-text">044-756 997</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-3" data-aos="fade-left">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <i class="fa fa-envelope  py-2 fa-4x text-info" aria-hidden="true"></i>
-                        <h4 class="card-title">อีเมลล์</h4>
-                        <p  class="card-text">infor@icon-engsolutions.com</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"> แบบฟอร์มติดต่อเรา </h5>
-                        <form>
-                            <div class="form-row" data-aos="fade-right">
-                                <div class="form-group col-md-4">
-                                    <label for="name">ชื่อ</label>
-                                    <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="phone">เบอร์โทรศัพท์</label>
-                                    <input type="text" id="phone" class="form-control" placeholder="เบอร์โทรศัพท์ของคุณ">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="email">อีเมลล์</label>
-                                    <input type="text" id="email" class="form-control" placeholder="example@email.com">
-                                </div>
-                            </div>
-                            <div class="form-group" data-aos="fade-left">
-                                <label for="message">ข้อความของคุณ</label>
-                                <textarea id="message" rows="5" class="form-control" placeholder="เขียนข้อความของคุณที่นี้"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary d-block mx-auto">ส่งข้อความ</button>
-                        </form>
-                    </div>
+
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://maps.google.com/maps?q=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20%E0%B9%84%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%99-%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%88%E0%B8%B4%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%20%E0%B9%82%E0%B8%8B%E0%B8%A5%E0%B8%B9%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%99%20%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>                          
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
                 </div>
-            </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
         </div>
-    </section>
+
+      </div>
+    </section><!-- End Contact Section -->
 
 
-<?php 
-include 'foot.php'
-?>
+
+  </main>
+<?php include 'foot.php' ?>

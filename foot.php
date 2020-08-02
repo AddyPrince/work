@@ -1,40 +1,69 @@
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
+          <div class="col-lg-6 col-md-12">
+            <div class="footer-info">
+            <br>
+              <p>
+                เขตอุตสาหกรรมสุรนารี 799<br>
+                หมู่ที่ 3 ตำบลหนองบัวศาลา<br><br>
+                <strong>Phone:</strong> +061-465-2652<br>
+                <strong>Email:</strong> project@itssautomation.com <br>
+              </p>
+              <br>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <br><br>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-6 col-md-12">
+            <div class="footer-info">
+            
+            <iframe src="https://maps.google.com/maps?q=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20%E0%B9%84%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%99-%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%88%E0%B8%B4%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%20%E0%B9%82%E0%B8%8B%E0%B8%A5%E0%B8%B9%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%99%20%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 240px;" allowfullscreen></iframe>
+          
+            </div>
+          </div>
+          
 
-<!-- Footer -->
-
-<footer class="semi-footer text-white p-5 text-center text-md-left">
-    <div class="row">
-      <div class="col-md-4" data-aos="flip-left">
-        <h4> ICON-ENGINEERING SOLUTIONS Co.,Ltd.</h4>
-        <p>เขตอุตสาหกรรมสุรนารี 799 <br> หมู่ที่ 3 ตำบลหนองบัวศาลา <br> อำเภอเมืองนครราชสี จังหวัดนครราชสีมา 30000</p>
-      </div>
-      <div class="col-md-4" data-aos="flip-right">
-        <h4>ติดต่อเรา</h4>
-        <p>
-          <i class="fa fa-phone-square"></i> TEL : 044-756 997 <br>
-          <i class="fa fa-fax"></i> FAX : 044-756 998 <br>
-          <i class="fa fa-fax"></i> FAX ID : 0105557056792 <br>
-          <i class="fa fa-address-card"></i> Email : infor@icon-engsolutions.com
-        </p>
-      </div>
-      <div class="col-md-4" data-aos="flip-up">
-        <h4> Line</h4>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <footer class="footer">
-    <span> COPYRIGHT 2020</span> ICON-ENGINEERING SOLUTIONS Co.,Ltd.
-  </footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       Designed by IT </a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
 
-  <script src="node_modules/aos/dist/aos.js"></script>
-  <script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<!-- </body>
 
-</html> -->
+</body>
+
+</html>

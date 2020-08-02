@@ -1,85 +1,197 @@
-<?php 
-include 'head.php' ;
-?>
- <!-- Navber -->
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/image/logo1.jpg" width="45" height="45" alt="" style="border-radius: 5px;">
-      </a>
 
-      <span class="navbar-text text-white collapse navbar-collapse">
-        ICON-ENGINEERING SOLUTIONS
-      </span>
+<?php include 'header.php' ?>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey"
-        aria-controls="#navbarKey" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarKey">
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item">
-          <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link active" href="about.php">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.php">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
-        </ul>
-
-      </div>
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+        <div class="container d-flex">
+            <div class="contact-info mr-auto">
+                <i class="icofont-envelope"></i> <a href="project@itssautomation.com">project@itssautomation.com</a>
+                <i class="icofont-phone"></i> 0614652652
+            </div>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="skype"><i class="icofont-skype"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+        </div>
     </div>
-  </nav>
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+            <h1 class="logo mr-auto"><a href="index.html">ENGINEERING</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo  SOLUTIONS Co, Ltd -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="about.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <!-- <li><a href="#team">Team</a></li> -->
+                    <li><a href="contact.php">Contact</a></li>
+    
+                </ul>
+            </nav><!-- .nav-menu -->
+    
+        </div>
+    </header><!-- End Header -->
 
-<!-- TOP -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-img jarallax" data-jarallax='{ "speed": 0.6 }' style="background-image: url(assets/image/a2.jpg)">
-          <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">About</h1>
-            <h1 class="display-5 font-weight-bold">ICON-ENGINEERING</h1>
-            <p>ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)</p>
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>ENGINEERING SOLUTIONS Co, Ltd</h1>
+      <h2>ผลิตภัณฑ์มีมาตรฐาน  ล้ำเลิศเทคโนโลยี ทีมงานมืออาชีพ 
+        มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์ สำคัญที่สุดคือลูกค้า
+        </h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+    <br><br><br><br>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="assets/img/a3.jpg" class="img-fluid" alt="">
           </div>
-          <div class="blackscreen"> </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>บริษัท ไอคอน-เอ็นจิเนียลิ่ง โซลูชั่น จำกัด (สำนักงานใหญ่)</h3>
+            <p class="font-italic">
+              ได้ก่อตั้งขึ้นในปี พุทธศักราช 2557 ที่เขตอุตสาหกรรมสุรนารี จังหวัดนครราชสีมา ดำเนินธุรกิจ ผลิตและประกอบเครื่องจักรอัตโนมัติที่ใช้งานในอุตสาหกรรมทุกประเภท 
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> vision system .</li>
+              <li><i class="icofont-check-circled"></i> วิเคราะห์ความเสียหาย.</li>
+              <li><i class="icofont-check-circled"></i> inspection ชิ้นงาน.</li>
+              <li><i class="icofont-check-circled"></i> ขึ้นรูปชิ้นงาน ในลักษณะต่างๆ ,laser cut acrylic ,laser บนผิวชิ้นงาน</li>
+            </ul>
+            <p>
+              ครบครันด้วยบริการตั้งแต่สำรวจโรงงาน คำนวณระยะเวลาคืนทุนต่อเนื่องโปรเจค ออกแบบเครื่องจักรอัตโนมัติและเพิ่มประสิทธิภาพการทำงาน ประกอบ ติดตั้ง ไปจนถึงโปรแกรมการทำงานได้อย่างมีประสิทธิภาพ
+            </p>
+          </div>
         </div>
-      </div>
-      </div>
-      </div>
 
-     <!-- เนื้อหา -->
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container">
-      <h1 class="border-suort-bottom" data-aos="fade-right">บริษัท ไอคอน-เอ็นจิเนียลิ่ง โซลูชั่น จำกัด</h1>
-       <p class="lead" data-aos="fade-left">บริษัท ไอคอน-เอ็นจิเนียลิ่ง โซลูชั่น จำกัด (สำนักงานใหญ่ ) ได้ก่อตั้งขึ้นในปี พุทธศักราช 2557 ที่เขตอุตสาหกรรมสุรนารี จังหวัดนครราชสีมา 
-        ดำเนินธุรกิจ ผลิตและประกอบเครื่องจักรอัตโนมัติที่ใช้งานในอุตสาหกรรมทุกประเภท , วิเคราะห์งานในลักษณะต่างๆ
-        เช่น  vision system , วิเคราะห์ความเสียหาย, inspection ชิ้นงาน และ ขึ้นรูปชิ้นงาน ในลักษณะต่างๆ ไม่ว่าจะเป็น งาน laser cut acrylic , laser บนผิวชิ้นงาน โลหะต่างๆ 
-        , cnc ชิ้นงานตามรูปแบบทั้งโลหะและอโลหะ , ตัด , กลึงขึ้นรูป  ฯลฯ  ซึ่งบริษัท ไอคอน-เอ็นจิเนียลิ่ง โซลูชั่น จำกัด ได้ผลิต ผลิตภัณฑ์ที่ดีและการบริการที่ยอดเยี่ยมให้กับลูกค้าทั้งในและต่างประเทศ</p>
-      <img class="container p-3" src="assets/image/about1.png" alt="" data-aos="fade-right">
-      <p class="lead" data-aos="fade-left">ครบครันด้วยบริการตั้งแต่สำรวจโรงงาน คำนวณระยะเวลาคืนทุนต่อเนื่องโปรเจค ออกแบบเครื่องจักรอัตโนมัติและเพิ่มประสิทธิภาพการทำงาน ประกอบ ติดตั้ง ไปจนถึงโปรแกรมการทำงานได้อย่างมีประสิทธิภาพ</p>
-      <img class="container p-3" src="assets/image/about2.jpg" alt="" data-aos="fade-right">
-    </div>
-  </div>
+      </div>
+      <br><br><br><br><br><br>
+    </section><!-- End About Section -->
 
- 
-  <div class="page-title jarallax" data-jarallax='{ "speed": 0.6 }' style="background-image: url(assets/image/a4.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center ">
-          <h1 class="display-4 font-weight-bold">ICON-ENGINEERING</h1>
-          <p class="lead">"ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)"</p>
+   <!-- ======= Cta Section ======= -->
+   <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h1>แผนผังวิศวกรรม </h1>
         </div>
-      </div>
-    </div>
-  </div>
-<br>
 
-    <?php 
-  include 'foot.php';
-  ?>
+      </div>
+    </section><!-- End Cta Section -->
+
+      <!-- ======= About Section ======= -->
+      <section id="about2" class="about2">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge">
+                            <p class="text-info">Job onboarding</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Job onboarding</h5>
+                            <p class="text-muted">งาน onboarding</p>
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">
+                            <p class="text-info">Design</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Design</h5>
+                            <p class="text-muted">ออกแบบ </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge">
+                            <p class="text-info"> Drawing</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">การวาดภาพ </p>
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">
+                            <p class="text-info">Cutting part</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">ตัดชิ้นส่วน </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge">
+                            <p class="text-info">Surface</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">พื้นผิว </p>
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">
+                            <p class="text-info">Standards part</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">ส่วนมาตรฐาน </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge">
+                            <p class="text-info">Assembly</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">การชุมนุม </p>
+
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">
+                            <p class="text-info">Delivery</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">การจัดส่งสินค้า </p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge">
+                            <p class="text-info">Maintenance</p>
+                        </div>
+                        <div class="timeline-card">
+                        <h5 >Drawing</h5>
+                            <p class="text-muted">ซ่อมบำรุง </p>
+
+                        </div>
+                    </li>
+                    <li class="timeline-arrow">
+                        <i class="fa fa-chevron-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section><!-- End About Section -->
+
+
+    </main>
+<?php include 'foot.php' ?>
