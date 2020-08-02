@@ -32,11 +32,11 @@ include 'header.php' ;
         <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
                 <!-- <li><a href="#team">Team</a></li> -->
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
 
             </ul>
         </nav><!-- .nav-menu -->
