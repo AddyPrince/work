@@ -1827,7 +1827,9 @@ section {
   position: relative;
   color:red;
 }
-
+.text-theme{
+  color: #fc9075 !important;
+}
 @media only screen and (max-width: 600px) {
   .content-custom {
     /* position: fixed; */

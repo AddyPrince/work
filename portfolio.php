@@ -1,9 +1,9 @@
 <?php include 'header.php' ?>
 
     <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
-        <div class="container d-flex">
+        <div class="container d-flex text-theme">
             <div class="contact-info mr-auto">
-                <i class="icofont-envelope"></i> <a href="project@itssautomation.com">project@itssautomation.com</a>
+                <i class="icofont-envelope"></i> <a href="project@itssautomation.com" class="text-theme">project@itssautomation.com</a>
                 <i class="icofont-phone"></i> 0614652652
             </div>
             <div class="social-links">
@@ -20,14 +20,14 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
     
-            <h1 class="logo mr-auto"><a href="index.html">ENGINEERING</a></h1>
+            <h1 class="logo mr-auto"><a href="index.php">ENGINEERING</a></h1>
             <!-- Uncomment below if you prefer to use an image logo  SOLUTIONS Co, Ltd -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" class="img-fluid"></a>-->
     
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">about</a></li>
+                    <li><a href="about.php">About</a></li>
                     <li><a href="services.php">Services</a></li>
                     <li class="active"><a href="portfolio.php">Portfolio</a></li>
                     <!-- <li><a href="#team">Team</a></li> -->
@@ -40,18 +40,19 @@
     </header><!-- End Header -->
 
  <!-- ======= Hero Section ======= -->
- <section id="hero" class="d-flex align-items-center">
+ <!-- <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <h1>ENGINEERING SOLUTIONS Co, Ltd</h1>
       <h2>ผลิตภัณฑ์มีมาตรฐาน  ล้ำเลิศเทคโนโลยี ทีมงานมืออาชีพ 
         มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์ สำคัญที่สุดคือลูกค้า
         </h2>
     </div>
-  </section><!-- End Hero -->
+  </section> -->
+  <!-- End Hero -->
 
   <main id="main">
  <!-- ======= Portfolio Section ======= -->
- <section id="portfolio" class="portfolio">
+ <section id="portfolio" class="portfolio" style="margin-top: 10vh;">
       <div class="container">
 
         <div class="section-title">
