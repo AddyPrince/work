@@ -1,188 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <?php 
-include 'head.php' ;
+include 'header.php' ;
 ?>
-<!-- Navber -->
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/image/logo1.jpg" width="45" height="45" alt="" style="border-radius: 5px;">
-      </a>
 
-      <span class="navbar-text text-white collapse navbar-collapse">
-        ICON-ENGINEERING SOLUTIONS
-      </span>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey"
-        aria-controls="#navbarKey" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarKey">
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item">
-          <a class="nav-link active" href="index.php">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="about.php">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.php">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
-        </ul>
-
-      </div>
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+    <div class="container d-flex">
+        <div class="contact-info mr-auto">
+            <i class="icofont-envelope"></i> <a href="project@itssautomation.com">project@itssautomation.com</a>
+            <i class="icofont-phone"></i> 0614652652
+        </div>
+        <div class="social-links">
+            <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+            <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+            <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+            <a href="#" class="skype"><i class="icofont-skype"></i></a>
+            <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        </div>
     </div>
-  </nav>
-  
-  <!-- image top -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-img" style="background-image: url(assets/image/a4.jpg)">
-          <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">ICON-ENGINEERING</h1>
-            <p>ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)</p>
-          </div>
-          <div class="blackscreen"> </div>
-        </div>
-      </div>
+</div>
 
-      <div class="carousel-item">
-        <div class="carousel-img" style="background-image: url(assets/image/a2.jpg)">
-          <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">ICON-ENGINEERING</h1>
-            <p>ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)</p>
-          </div>
-          <div class="blackscreen"></div>
-        </div>
-      </div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
 
-      <div class="carousel-item">
-        <div class="carousel-img" style="background-image: url(assets/image/a3.jpg)">
-          <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">ICON-ENGINEERING</h1>
-            <p>ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)</p>
-          </div>
-          <div class="blackscreen"></div>
-        </div>
-      </div>
+        <h1 class="logo mr-auto"><a href="index.html">ENGINEERING</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo  SOLUTIONS Co, Ltd -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <!-- <li><a href="#team">Team</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav><!-- .nav-menu -->
+
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+</header><!-- End Header -->
 
 
-  <!-- เนื้อหา -->
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container" data-aos="fade-right">
-      <h1 class="border-suort-bottom">Robot & Machine Automation</h1>
-      <p class="lead">เครื่องจักรอัตโนมัติที่ดีที่สุด ไม่จําเป็นนต้องแพงที่สุด แต่ต้องสร้างสรรค์ Solution
-        ที่เหมาะสมที่สุดให้กับกระบวนการผลิต ซึ่งในแต่ละอุตสาหกรรมมีความต้องการที่ไม่เหมือนกัน ในฐานะผู้ออกแบบ
-        และผลิตเครื่องจักรอัตโนมัติ จึงต้องสร้างเครื่องจักร ที่สามารถตอบโจทย์แต่ละอุตสาหกรรมได้อย่างตรงใจ
-        ด้วยศักยภาพในการรองรับงาน ทั้งเครื่องจักรขนาดใหญ่ เครื่องจักรที่มีความซับซ้อนสูง และไลน์เครื่องจักรต่อเนื่อง .
-      </p>
-      <img class="container p-3" src="assets/image/s1.jpg" alt="">
-      <p class="lead">ICON-ENGINEERING SOLUTIONS Co, Ltd.
-        จึงได้รับความไว้วางใจจากอุตสาหกรรมชั้นนําทั้งในประเทศและต่างประเทศ ให้เป็นผู้ให้คำปรึกษา พัฒนา ปรับปรุง
-        ออกแบบสร้างระบบการผลิตเครื่องจักรอัตโนมัติ และระบบหุ่นยนต์ อาทิ อุตสาหกรรมชิ้นส่วนอิเล็กทรอนิกส์ ยานยนต์
-        อุตสาหกรรมก่อสร้าง อุตสาหกรรมอาหาร รวมไปถึงสินค้าอุปโภคและบริโภคต่าง ๆ ทำให้เราก้าวขึ้นมาเป็นผู้นําในการออกแบบ
-        และพัฒนาระบบการผลิตของ Factory Automation ในประเทศไทย </p>
+
+<section>
+    <video autoplay muted loop id="myVideo">
+        <source
+            src="https://r6---sn-30a7yn7y.c.drive.google.com/videoplayback?expire=1596357755&ei=O0QmX5XNJYWduQKeo76ICg&ip=171.101.23.103&cp=QVNOWERfVldTRlhOOnV0SlFGeEoyUThSUlQtS2NOYjhBTXVFbGJGZ3J5TF9IRHJNZTF2THpRT04&id=082ff1a0685ba8d0&itag=18&source=webdrive&requiressl=yes&mh=7C&mm=32&mn=sn-30a7yn7y&ms=su&mv=m&mvi=6&pl=24&sc=yes&ttl=transient&susc=dr&driveid=1FQxg5gqNj_5I9t1NrDGeeOC8c53C3mOG&app=texmex&mime=video/mp4&vprv=1&prv=1&dur=166.324&lmt=1595068032958272&mt=1596343214&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgYM-vPcLGBjDc3xYcIJzPqTZqLNEoaML99X8p2raUwY8CIEAGYads_ul0YXkI6OZTV3ySE5KKHlj1Z62-ZdjOLCzc&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRgIhAN0UNymGSAiy63ycbjW-MLJPjXUr79wOoNPGAVyeTs3PAiEAgIIxtLw6OyuRc2vT-3ffH0gaqR-RdxZQ_ybsTW2VCQo=&cpn=tj2ua8DxyygRwNNY&c=WEB_EMBEDDED_PLAYER&cver=20200731"
+            type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content-custom">
+        <h1>ENGINEERING SOLUTIONS Co, Ltd</h1>
+        <p>ผลิตภัณฑ์มีมาตรฐาน ล้ำเลิศเทคโนโลยี ทีมงานมืออาชีพ มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์ สำคัญที่สุดคือลูกค้า </p>
     </div>
-  </div>
-
-  <div class="page-title jarallax" data-jarallax='{ "speed": 0.6 }' style="background-image: url(assets/image/a4.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center ">
-          <h1 class="display-4 font-weight-bold">เกี่ยวกับเรา</h1>
-          <p class="lead">"ICON-ENGINEERING SOLUTIONS Co.,Ltd.(HEAD OFFICE)"</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- เนื้อหา2 -->
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container" data-aos="fade-right">
-      <h1 class="border-suort-bottom">Robot & Machine Automation</h1>
-      <p class="lead">อีกหนึ่งความภาคภูมิใจที่เราได้พัฒนาเพื่อจะก้าวไปเป็นผู้นำด้านเทคโนโลยี นวัตกรรม
-        การรองรับการเปลี่ยนแปลงในทุก ๆอุตสาหกรรมการผลิต ที่สามารถช่วยลำเลียงสินค้า ช่วยลดคน ลดเวลา ลดค่าใช้จ่าย
-        เพิ่มอัตราการผลิต สะดวกแม้อยู่ในพื้นที่ที่จำกัด
-        เรามีทีมวิศวกรมากประสบการณ์ที่สามารถออกแบบอุปกรณ์และเครื่องจักรแบบอัตโนมัติ มีเครื่องจักรที่ทันสมัย
-        สามารถรองรับความต้องการของลูกค้า ทั้งการออกแบบ พัฒนา ปรับปรุงและการผลิตเครื่องจักรอัตโนมัติ .</p>
-      <img class="container p-3" src="assets/image/total.png" alt="">
-    </div>
-  </div>
-
-  <!-- Blog -->
-  <div class="container p-3">
-    <h1 class="border-suort-bottom text-center">เกี่ยวกับเรา</h1>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 p-3" data-aos="fade-left">
-        <div class="card h-100">
-          <a href="#" class="warpper-card-img">
-            <img class="card-img-top" src="assets/image/b1.png" alt="Coding">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="p-3">
-            <a href="#" class="btn btn-primary btn-block">อ่านเพิ่มเติม</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 p-3" data-aos="flip-left">
-        <div class="card h-100">
-          <a href="#" class="warpper-card-img">
-            <img class="card-img-top" src="assets/image/b2.png" alt="Coding">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="p-3">
-            <a href="#" class="btn btn-primary btn-block">อ่านเพิ่มเติม</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 p-3" data-aos="fade-right">
-        <div class="card h-100">
-          <a href="#" class="warpper-card-img">
-            <img class="card-img-top" src="assets/image/b3.png" alt="Coding">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="p-3">
-            <a href="#" class="btn btn-primary btn-block">อ่านเพิ่มเติม</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <?php 
+</section>
+<section>
+ะำหะ
+</section>
+<?php 
   include 'foot.php';
   ?>
-  
+
+</html>
