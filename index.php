@@ -46,7 +46,7 @@ include 'header.php' ;
 
 
 
-<section>
+<section class="section-1">
     <video autoplay muted loop id="myVideo">
         <source
             src="http://sut-schedule.xyz/ABCDEFGHIJKLMNAUTOMATIONS.mp4?fbclid=IwAR2xPUT4ANWLlOVrt78-iIlfq0Ra6BrLGuybi3U7v0uA80R8DHDUtiU-XCU"
@@ -59,7 +59,12 @@ include 'header.php' ;
         <p>ผลิตภัณฑ์มีมาตรฐาน ล้ำเลิศเทคโนโลยี ทีมงานมืออาชีพ มุ่งมั่นสร้างสรรค์ผลิตภัณฑ์ สำคัญที่สุดคือลูกค้า </p>
     </div>
 </section>
-
+<section class="section-2">
+    xx
+</section>
+<div>
+    
+</div>
 
 <?php 
   include 'foot.php';

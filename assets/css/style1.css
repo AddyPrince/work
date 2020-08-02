@@ -1781,15 +1781,16 @@ section {
 
 /* new-custom */
 #myVideo {
-  position: fixed;
+  position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
   min-width: 100%;
   min-height: 100%;
 }
 
 .content-custom {
-  position: fixed;
+  position: relative;
   top: 70vh;
   left: 20vw;
   width: 40vw;
@@ -1813,9 +1814,23 @@ section {
   background: #ddd;
   color: black;
 }
+.section-1{
+  position: relative;
+  height: 100vh;
+}
+.section-2{
+  padding: 15px;
+  position: relative;
+  height: 100vh;
+}
+.details{
+  position: relative;
+  color:red;
+}
+
 @media only screen and (max-width: 600px) {
   .content-custom {
-    position: fixed;
+    /* position: fixed; */
     top: 50vh;
     left: 10vw;
     width: 80vw;
@@ -1824,7 +1839,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
   .content-custom {
-    position: fixed;
+    /* position: fixed; */
     top: 70vh;
     left: 10vw;
     width: 80vw;
