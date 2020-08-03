@@ -1,4 +1,4 @@
 # work
 testwork
 
-https://github.com/AddyPrince/work
+http://sut-schedule.xyz
