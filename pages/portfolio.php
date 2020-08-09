@@ -6,7 +6,7 @@
             <div class="section-title">
                 <span>Portfolio</span>
                 <h2>Portfolio</h2>
-                <p>ผลงานทางบริษัท</p>
+                <p><?=$langCon[$langParam]['ourProductive']?></p>
             </div>
 
             <div class="row" data-aos="fade-up">

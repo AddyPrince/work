@@ -6,6 +6,7 @@ $langCon= array(
         "service"=>"บริการของเรา",
         "portfolio"=>"ผลงาน",
         "contact"=>"ติดต่อ",
+        "ourProductive" =>"ผลงานทางบริษัท"
     ),
     "en" =>  array(
         "home"=>"Home",
@@ -13,5 +14,6 @@ $langCon= array(
         "service"=>"Services",
         "portfolio"=>"Portfolio",
         "contact"=>"Contact",
+        "ourProductive" => "Company performance"
     ));
 ?>
