@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   list-style: none;
 }
 
@@ -1832,7 +1832,7 @@ section {
   color: #fc9075 !important;
 }
 .toggle {
-  margin-left: 5px;
+  margin-left: 25px;
   margin-top: 18px;
 }
 @media only screen and (max-width: 600px) {
