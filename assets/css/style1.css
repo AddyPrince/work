@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     top: 0;
     padding: 15px 0;
-    background: transparent;
+    background: #fc9075 ;
   }
   #header .logo {
     font-size: 28px;
@@ -1831,6 +1831,10 @@ section {
 .text-theme{
   color: #fc9075 !important;
 }
+.toggle {
+  margin-left: 5px;
+  margin-top: 18px;
+}
 @media only screen and (max-width: 600px) {
   .content-custom {
     /* position: fixed; */
@@ -1839,6 +1843,7 @@ section {
     width: 80vw;
     padding: 20px;
   }
+  
 }
 @media only screen and (min-width: 768px) {
   .content-custom {
@@ -1848,4 +1853,5 @@ section {
     width: 80vw;
     padding: 20px;
   }
+ 
 }

@@ -3,6 +3,7 @@
 
 <?php 
 include 'pages/components/header.php' ;
+include 'controller/langController.php';
 ?>
 
 <body>
@@ -19,7 +20,7 @@ include 'pages/components/header.php' ;
                 <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
                 <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
                 <a href="#" class="skype"><i class="icofont-skype"></i></a>
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
             </div>
         </div>
     </div>
@@ -40,12 +41,13 @@ else
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="<?=$param=='main'?'active':''?>"><a href="index.php">Home</a></li>
-                    <li class="<?=$param=='about'?'active':''?>"><a href="index.php?p=about">About</a></li>
-                    <li class="<?=$param=='service'?'active':''?>"><a href="index.php?p=service">Services</a></li>
-                    <li class="<?=$param=='portfolio'?'active':''?>"><a href="index.php?p=portfolio">Portfolio</a></li>
-                    <li class="<?=$param=='contact'?'active':''?>"><a href="index.php?p=contact">Contact</a></li>
-
+                    <li class="<?=$param=='main'?'active':''?>"><a href="index.php"><?=$langCon[$langParam]['home'];?></a></li>
+                    <li class="<?=$param=='about'?'active':''?>"><a href="index.php?p=about"><?=$langCon[$langParam]['about'];?></a></li>
+                    <li class="<?=$param=='service'?'active':''?>"><a href="index.php?p=service"><?=$langCon[$langParam]['service'];?></a></li>
+                    <li class="<?=$param=='portfolio'?'active':''?>"><a href="index.php?p=portfolio"><?=$langCon[$langParam]['portfolio'];?></a></li>
+                    <li class="<?=$param=='contact'?'active':''?>"><a href="index.php?p=contact"><?=$langCon[$langParam]['contact'];?></a></li>
+                    <input type="checkbox" checked data-toggle="toggle" onclick="langChange()" data-on="EN"
+                        data-off="TH" data-onstyle="secondary" id="toggle-event" data-offstyle="info" data-size="xs">
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -83,5 +85,22 @@ switch ($param) {
   include 'pages/components/foot.php';
   ?>
 </body>
+
+
+<script>
+$(document).ready(function() {
+    var currentLang = "<?= $langParam ?>";
+    $('#toggle-event').bootstrapToggle(currentLang=='en'?'on':'off')
+});
+$(function() {
+   
+    $('#toggle-event').change(function() {
+        var currentLang = "<?= $langParam ?>";
+        // $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+        // Simulate a mouse click:
+        window.location.href = `index.php?lang=${currentLang=='en'?'th':'en'}`;
+    })
+})
+</script>
 
 </html>
