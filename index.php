@@ -4,6 +4,11 @@
 <?php 
 include 'pages/components/header.php' ;
 include 'controller/langController.php';
+
+if(isset($_GET['redirect'])){
+    $URL_Redirect = $_GET['redirect'];
+    header('Location: '.$URL_Redirect);  
+}
 ?>
 
 <body>
@@ -98,7 +103,8 @@ $(function() {
         var currentLang = "<?= $langParam ?>";
         // $('#console-event').html('Toggle: ' + $(this).prop('checked'))
         // Simulate a mouse click:
-        window.location.href = `index.php?lang=${currentLang=='en'?'th':'en'}`;
+        let redirectUrl = window.location.href;
+        window.location.href = `index.php?lang=${currentLang=='en'?'th':'en'}&redirect=${redirectUrl}`;
     })
 })
 </script>
