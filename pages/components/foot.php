@@ -7,7 +7,7 @@
           <div class="col-lg-6 col-md-12">
             <div class="footer-info">
             <br>
-              <p>
+              <p class="text-light">
                 เขตอุตสาหกรรมสุรนารี 799<br>
                 หมู่ที่ 3 ตำบลหนองบัวศาลา<br><br>
                 <strong>Phone:</strong> +061-465-2652<br>

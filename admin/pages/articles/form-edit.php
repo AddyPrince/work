@@ -154,49 +154,52 @@
 <script src="https://adminlte.io/themes/AdminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="../../plugins/datatables/dataTables.bootstrap4.min.js"></script>
 <!-- CK Editor -->
-<script src="../../plugins/ckeditor/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 <!-- Select2 -->
 <script src="../../plugins/select2/select2.full.min.js"></script>
 
 <script>
-  $(function () {
-    $('#dataTable').DataTable({
-      "paging": true,
-      "lengthChange": true,
-      "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": true
-    });
+  // $(function () {
+  //   $('#dataTable').DataTable({
+  //     "paging": true,
+  //     "lengthChange": true,
+  //     "searching": true,
+  //     "ordering": true,
+  //     "info": true,
+  //     "autoWidth": true
+  //   });
 
-    $('.custom-file-input').on('change', function(){
-        var fileName = $(this).val().split('\\').pop()
-        $(this).siblings('.custom-file-label').html(fileName)
-        if (this.files[0]) {
-            var reader = new FileReader()
-            $('.figure').addClass('d-block')
-            reader.onload = function (e) {
-                $('#imgUpload').attr('src', e.target.result);
-            }
-            reader.readAsDataURL(this.files[0])
-        }
-    })
+  //   $('.custom-file-input').on('change', function(){
+  //       var fileName = $(this).val().split('\\').pop()
+  //       $(this).siblings('.custom-file-label').html(fileName)
+  //       if (this.files[0]) {
+  //           var reader = new FileReader()
+  //           $('.figure').addClass('d-block')
+  //           reader.onload = function (e) {
+  //               $('#imgUpload').attr('src', e.target.result);
+  //           }
+  //           reader.readAsDataURL(this.files[0])
+  //       }
+  //   })
 
-    ClassicEditor
-      .create(document.querySelector('#detail'))
-      .then(function (editor) {
-        // The editor instance
-      })
-      .catch(function (error) {
-        console.error(error)
-      })
+  //   ClassicEditor
+  //     .create(document.querySelector('#detail'))
+  //     .then(function (editor) {
+  //       // The editor instance
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error)
+  //     })
 
-    //Initialize Select2 Elements
-    $('.select2').select2()
+  //   //Initialize Select2 Elements
+  //   $('.select2').select2()
 
-  });
+  // });
   
 </script>
 
 </body>
+<script>
+  CKEDITOR.replace('detail');
+</script>
 </html>
