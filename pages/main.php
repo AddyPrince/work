@@ -1,10 +1,10 @@
 <section class="section-1">
-    <!-- <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="myVideo">
         <source
             src="http://sut-schedule.xyz/ABCDEFGHIJKLMNAUTOMATIONS.mp4?fbclid=IwAR2xPUT4ANWLlOVrt78-iIlfq0Ra6BrLGuybi3U7v0uA80R8DHDUtiU-XCU"
             type="video/mp4">
         Your browser does not support HTML5 video.
-    </video> -->
+    </video>
 
     <div class="content-custom">
         <h1>ENGINEERING SOLUTIONS Co, Ltd</h1>
