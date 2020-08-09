@@ -1821,7 +1821,7 @@ section {
 .section-2{
   padding: 15px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .details{
   position: relative;
