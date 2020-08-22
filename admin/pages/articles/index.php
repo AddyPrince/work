@@ -32,7 +32,11 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar & Main Sidebar Container -->
-  <?php include_once('../includes/sidebar.php') ?>
+  <?php include_once('../includes/sidebar.php');
+              require_once('../../../conn/connect.php');
+
+  
+  ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -77,20 +81,28 @@
             </tr>
             </thead>
             <tbody>
-            <?php for($id=1; $id <= 5; $id++) { ?>
+            <?php 
+            
+
+  
+            $SqlCommand = "SELECT * FROM `articles`";
+            $result = $conn->query($SqlCommand);
+            while($row = $result->fetch_assoc()){
+            //  print_r($row);
+            ?>
               <tr>
-                <td><?php echo $id; ?></td>
-                <td><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1531026383433-6ed5a112afbc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c010c700aac502636ad0b579ce1274a4&auto=format&fit=crop&w=1350&q=80" width="150px" alt=""></td>
-                <td>Subject<?php echo $id; ?></td>
-                <td>Subtitle<?php echo $id; ?></td>
+                <td><?php echo $row['id']; ?></td>
+                <td><img class="img-fluid d-block mx-auto" src="../../../blog/images/<?=$row['image']?>" width="150px" alt=""></td>
+                <td><?php echo $row['subject']; ?></td>
+                <td><?php echo $row['sub_title']; ?></td>
                 <td>1/12/2018</td>
                 <td>
-                  <a href="form-edit.php?id=<?php echo $id; ?>" class="btn btn-sm btn-warning text-white">
+                  <a href="form-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
                     <i class="fas fa-edit"></i> edit
                   </a> 
                 </td>
                 <td>
-                  <a href="#" onclick="deleteItem(<?php echo $id; ?>);" class="btn btn-sm btn-danger">
+                  <a href="#" onclick="deleteItem(<?php echo $row['id']; ?>);" class="btn btn-sm btn-danger">
                     <i class="fas fa-trash-alt"></i> Delete
                   </a>
                 </td>

@@ -65,7 +65,7 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form role="form" action="create.php" method="post">
+        <form role="form" action="create.php" method="post" enctype="multipart/form-data">
           <div class="card-body">
 
             <div class="form-group">
