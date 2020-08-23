@@ -76,6 +76,8 @@
               <th>Subject</th>
               <th>Subtitle</th>
               <th>Created</th>
+              <th>Last Updated</th>
+              <th>Language</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>
@@ -95,10 +97,13 @@
                 <td><img class="img-fluid d-block mx-auto" src="../../../blog/images/<?=$row['image']?>" width="150px" alt=""></td>
                 <td><?php echo $row['subject']; ?></td>
                 <td><?php echo $row['sub_title']; ?></td>
-                <td>1/12/2018</td>
+                <td><?=$row['date_create']?></td>
+                <td><?=$row['date_update']?></td>
+                <td><span class="badge <?=$row['language']=='th'?'badge-info':'badge-success'?>"><?=strtoupper($row['language'])?></span></td>
+
                 <td>
                   <a href="form-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
-                    <i class="fas fa-edit"></i> edit
+                    <i class="fas fa-edit"></i> Edit
                   </a> 
                 </td>
                 <td>

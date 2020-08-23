@@ -14,7 +14,7 @@
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
                         <h3>Our Address</h3>
-                        <p>เขตอุตสาหกรรมสุรนารี 799 หมู่ที่ 3 ตำบลหนองบัวศาลา</p>
+                        <p> <?=$langCon[$langParam]['address'];?></p>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center"><button type="submit"> <?=$langCon[$langParam]['send_message'];?></button></div>
                     </form>
                 </div>
 

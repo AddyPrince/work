@@ -32,7 +32,10 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar & Main Sidebar Container -->
-  <?php include_once('../includes/sidebar.php') ?>
+  <?php
+  include_once('../includes/sidebar.php');
+  require_once('../../../conn/connect.php');
+  ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -68,25 +71,32 @@
                 <tr class="text-center">
                     <th>No.</th>
                     <th>Name</th>
-                    <th>Phone</th>
+                    <th>Subject</th>
                     <th>Email</th>
                     <th>Message</th>
                     <th>Created</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php for ($i=1; $i < 50 ; $i++) { ?>
+                <?php 
+                
+           
+            $SqlCommand = "SELECT * FROM `contacts`";
+            $result = $conn->query($SqlCommand);
+            while($row = $result->fetch_assoc())
+                { 
+                  ?>
                 <tr>
-                    <td><?php echo $i; ?></td>
-                    <td>Lorem, ipsum.</td>
-                    <td>088-888-8888</td>
-                    <td>Test@test</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ad maxime quas esse ipsa exercitationem praesentium hic numquam dignissimos quia?</td>
-                    <td>1/12/2018</td>
+                    <td><?=$row['id']?></td>
+                    <td><?=$row['name']?></td>
+                    <td><?=$row['subject']?></td>
+                    <td><?=$row['email']?></td>
+                    <td><?=$row['message']?></td>
+                    <td><?=date("d/m/Y", strtotime($row['date']));?></td>
                 </tr>
                 <?php } ?>
                 </tbody>
-                <tfoot>
+                <!-- <tfoot>
                 <tr  class="text-center">
                   <th>No.</th>
                     <th>Name</th>
@@ -95,7 +105,7 @@
                     <th>Message</th>
                     <th>Created</th>
                 </tr>
-                </tfoot>
+                </tfoot> -->
             </table>
         </div>
         <!-- /.card-body -->

@@ -80,6 +80,12 @@ switch ($param) {
    case 'contact':
         include_once("pages/contact.php");
             break;
+    case 'blogs':
+        include_once("pages/blog.php");
+            break;
+    case 'read':
+        include_once("pages/read.php");
+            break;
     default:
          include_once("pages/main.php");
         break;
@@ -108,5 +114,17 @@ $(function() {
     })
 })
 </script>
+
+
+
+<?php
+// footer script
+switch ($param) {
+    case 'blogs':
+        include_once("pages/blog.footer.script.php");
+     break;
+}
+?>
+
 
 </html>

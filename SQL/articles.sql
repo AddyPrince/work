@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 09, 2020 at 09:34 AM
+-- Generation Time: Aug 23, 2020 at 01:15 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -32,17 +32,19 @@ CREATE TABLE `articles` (
   `subject` text NOT NULL,
   `sub_title` text NOT NULL,
   `image` text NOT NULL,
-  `detail` text NOT NULL
+  `detail` text NOT NULL,
+  `date_create` datetime NOT NULL,
+  `date_update` datetime NOT NULL,
+  `language` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`id`, `subject`, `sub_title`, `image`, `detail`) VALUES
-(1, 'test1', 'test2', 'test3', 'ttttt'),
-(3, '', '', 'filpath', '<p>test 12333 1455a5sdasd</p>\r\n\r\n<div id=\"simple-translate\">\r\n<div>\r\n<div class=\"simple-translate-button isShow\" style=\"background-image: url(&quot;moz-extension://546a68e1-2fef-4133-aaa0-5313a8ced9a5/icons/512.png&quot;); height: 22px; width: 22px; top: 74px; left: 168px;\">&nbsp;</div>\r\n\r\n<div class=\"simple-translate-panel \" style=\"width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: rgb(255, 255, 255);\">\r\n<div class=\"simple-translate-result-wrapper\" style=\"overflow: hidden;\">\r\n<div class=\"simple-translate-move\" draggable=\"true\">&nbsp;</div>\r\n\r\n<div class=\"simple-translate-result-contents\">\r\n<p class=\"simple-translate-result\" style=\"color: rgb(0, 0, 0);\">&nbsp;</p>\r\n\r\n<p class=\"simple-translate-candidate\" style=\"color: rgb(115, 115, 115);\">&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n'),
-(4, 'test subject', 'test sub title', 'filpath', '<p>This is my Contents</p>\r\n\r\n<p>test cosad</p>\r\n\r\n<p>awqdasd</p>\r\n\r\n<p>asd</p>\r\n\r\n<p>asd</p>\r\n\r\n<p>as</p>\r\n\r\n<p>d</p>\r\n');
+INSERT INTO `articles` (`id`, `subject`, `sub_title`, `image`, `detail`, `date_create`, `date_update`, `language`) VALUES
+(122, 'english content', 'english content', '1598177094.png', '<p>english content</p>\r\n\r\n<p><strong>english contentenglish content</strong></p>\r\n\r\n<div id=\"simple-translate\">\r\n<div>\r\n<div class=\"isShow simple-translate-button\" style=\"background-image:url(&quot;moz-extension://546a68e1-2fef-4133-aaa0-5313a8ced9a5/icons/512.png&quot;); height:22px; left:168px; top:69px; width:22px\">&nbsp;</div>\r\n\r\n<div class=\" simple-translate-panel\" style=\"background-color:#ffffff; font-size:13px; height:200px; left:0px; top:0px; width:300px\">\r\n<div class=\"simple-translate-result-wrapper\" style=\"overflow:hidden\">\r\n<div class=\"simple-translate-move\" draggable=\"true\">&nbsp;</div>\r\n\r\n<div class=\"simple-translate-result-contents\">\r\n<p class=\"simple-translate-result\" style=\"color:#000000\">&nbsp;</p>\r\n\r\n<p class=\"simple-translate-candidate\" style=\"color:#737373\">&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', '2020-08-23 16:53:21', '2020-08-23 17:04:53', 'en'),
+(123, 'บทความภาษาไทย', 'testt', '1598177119.jpg', '<p>บทความภาษาไทยบ</p>\r\n', '2020-08-23 17:00:27', '2020-08-23 17:05:19', 'th');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +64,7 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

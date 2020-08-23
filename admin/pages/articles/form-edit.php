@@ -123,14 +123,12 @@ require_once('../../../conn/connect.php');
                             </div>
 
                             <div class="form-group">
-                                <label>Select a Tags</label>
-                                <select class="form-control select2" multiple="multiple"
+                                <label>Language</label>
+                                <select class="form-control select2" multiple="multiple" name="tag_lang"
                                     data-placeholder="Select a Tags" style="width: 100%;">
-                                    <option value="html">html</option>
-                                    <option value="css">css</option>
-                                    <option value="javascript">javascript</option>
-                                    <option value="php">php</option>
-                                    <option value="mysql">mysql</option>
+                                    <option value="th" <?=$result['language']=='th'?'selected':'' ?>>ไทย</option>
+                                    <option value="en" <?=$result['language']=='en'?'selected':'' ?> >English</option>
+
                                 </select>
                             </div>
 
@@ -168,7 +166,8 @@ require_once('../../../conn/connect.php');
     </script>
     <script src="../../plugins/datatables/dataTables.bootstrap4.min.js"></script>
     <!-- CK Editor -->
-    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <!-- <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script> -->
+    <script src="//cdn.ckeditor.com/4.14.1/full/ckeditor.js"></script>
     <!-- Select2 -->
     <script src="../../plugins/select2/select2.full.min.js"></script>
 

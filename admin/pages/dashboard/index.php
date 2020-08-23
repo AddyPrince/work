@@ -33,7 +33,18 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <?php include_once('../includes/sidebar.php') ?>
+  <?php 
+  
+  include_once('../includes/sidebar.php');
+  require_once('../../../conn/connect.php');
+  $articles=$conn->query("SELECT count(*) as total from articles")->fetch_assoc();
+  $contacts=$conn->query("SELECT count(*) as total from contacts")->fetch_assoc();
+
+  $today = date('Y-m-d');
+  $todayArticles=$conn->query("SELECT count(*) as total from articles WHERE DATE(date_create) = '$today'")->fetch_assoc();
+  $todayContacts=$conn->query("SELECT count(*) as total from contacts WHERE DATE(date) =  '$today'")->fetch_assoc();
+
+  ?>
 
 
   <!-- Content Wrapper. Contains page content -->
@@ -61,28 +72,55 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-6 col-6">
-            <div class="small-box bg-info">
+            <div class="small-box bg-info2">
               <div class="inner">
-                <h3>10</h3>
-                <p>New Articles</p>
+                <h3><?=$todayArticles['total']?></h3>
+                <p>Today articles</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <!-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 col-6">
+            <div class="small-box bg-success2">
+              <div class="inner">
+                <h3><?=$todayContacts['total']?></h3>
+
+                <p>Today contacts</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <!-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-6">
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3><?=$articles['total']?></h3>
+                <p>All Articles</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <!-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
             </div>
           </div>
           <div class="col-lg-6 col-6">
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53</h3>
+                <h3><?=$contacts['total']?></h3>
 
                 <p>All Contacts</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <!-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
             </div>
           </div>
         </div>
@@ -93,38 +131,7 @@
           <section class="col-lg-12">
 
             <!-- DIRECT CHAT -->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Contact Us</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover">
-                <tr  class="text-center">
-                    <th>No.</th>
-                    <th>Name</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Message</th>
-                    <th>Created</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php for ($i=1; $i < 9 ; $i++) { ?>
-                <tr>
-                    <td><?php echo $i; ?></td>
-                    <td>Lorem, ipsum.</td>
-                    <td>088-888-8888</td>
-                    <td>Test@test</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ad maxime quas esse ipsa exercitationem praesentium hic numquam dignissimos quia?</td>
-                    <td>1/12/2018</td>
-                </tr>
-                <?php } ?>
-                </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
+            <!-- backup contact list here -->
             <!-- /.card -->
           </section>
         </div>

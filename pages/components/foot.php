@@ -8,8 +8,8 @@
                       <div class="footer-info">
                           <br>
                           <p class="text-light">
-                              เขตอุตสาหกรรมสุรนารี 799<br>
-                              หมู่ที่ 3 ตำบลหนองบัวศาลา<br><br>
+                             <?=$langCon[$langParam]['address'];?>
+                              <br><br>
                               <strong>Phone:</strong> +061-465-2652<br>
                               <strong>Email:</strong> project@itssautomation.com <br>
                           </p>

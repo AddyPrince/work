@@ -91,7 +91,7 @@ $result = $conn->query($sql);
                 <td><?php echo $row['username']; ?></td>
                 <td><?php echo $row['first_name']; ?></td>
                 <td><?php echo $row['last_name']; ?></td>
-                <td><span class="badge badge-primary"><?php echo $row['status']; ?></span></td>
+                <td><span class="badge badge-<?=$row['status']=='superadmin'?'danger':'warning' ?>"><?php echo $row['status']; ?></span></td>
                 <td>
                   <a href="form-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
                     <i class="fas fa-edit"></i> edit
