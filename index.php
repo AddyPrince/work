@@ -123,6 +123,9 @@ switch ($param) {
     case 'blogs':
         include_once("pages/blog.footer.script.php");
      break;
+    case 'read':
+        include_once("pages/read.style.php");
+     break;
 }
 ?>
 
