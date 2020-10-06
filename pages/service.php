@@ -1,6 +1,6 @@
 <main id="main">
   <!-- ======= Clients Section ======= -->
-  <section id="clients" class="clients" style="margin-top: 10vh">
+ <!-- <section id="clients" class="clients" style="margin-top: 10vh">
       <div class="container" data-aos="zoom-in">
           
       <div class="section-title">
@@ -38,11 +38,11 @@
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section> --> <!-- End Clients Section -->
 
 
 
-  <section id="services" class="services">
+  <section id="services" class="services" style="margin-top: 10vh;">
       <div class="container">
         <div class="section-title">
           <span>Services</span>
@@ -94,7 +94,7 @@
         </div>
 
 </div>
-</section>
+  </section>
 
  <!-- ======= Gallery Section ======= -->
  <section id="gallery" class="gallery">

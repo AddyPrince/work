@@ -1,0 +1,64 @@
+AOI MACHINE FOR VMI TOP COVER 3.5    = a1
+AUTO ASSEMBLY CONE MC                = a2
+AUTO ATTACH FPC MC LEO300318	     = a3
+Auto Golden Roll Machine 26072562    = a4
+AUTO INSULATION BUSH INSERT MC#080619 = a5
+AUTO MAGNETIZING MC MODEL TATSU	      = a6
+AUTO MINI CNC MC NEW		      = a7
+AUTO PACKING 2ND COVER STAMPING	      = a8
+AUTO ROBOT PICK AND PLACE HDD COVER MC = a9
+AUTO SA INSERT MC by Pnong_210219	= a10
+auto tap icon                         = a11
+Auto Trimming for MAKALU	      = a12
+AUTO VISION COVER MC		      = a13
+BKP AUTO ASSEMBLY MC-N		      = a14
+CHECK POINT AIR HOLD UNIT	      = a15
+FCC Automatic Line-Module3-NETR-REV01 = a16
+FCC Line NETR-Module4                 = a17
+FCC Line NETR-Module5		      = a18
+FCC Line NETR-Module6 		      = a19
+FCC Line NETR-Module7		      = a20
+FCC Line NETR-Module10		      = a21
+FCC Line NETR-Module11		      = a22
+FCC Line NETR-Module12		      = a23
+FCC Line NETR-Module13		      = a24
+FCC Line NETR-Module14		      = a25
+FCC Line NETR-Module15		      = a26
+FCC Line NETR-Module16		      = a27
+FCC Line NETR-Module17		      = a28
+FCC Line NETR-Module18-Standard700    = a29
+FCC Line NETR-Module19-Standard1000   = a30
+FCC Line NETR-Module20-221019         = a31
+FCC Line NETR-Module21-22-23-24042020  = a32
+FCC Line NETR-Module24-290120         = a33
+Triming Auto Machine070217	      = a34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
